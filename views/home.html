@@ -1,0 +1,11 @@
+<h1>Welcome, {{user.email}}</h1> Online Users : {{onlineUsers}}
+<a href="" ng-click="doLogout()">Logout</a>
+	<div>All Posts</div><hr>
+
+	<div ng-repeat="post in posts">
+		<span><b>Author : {{post.author}}</b><br>
+		Body : {{post.body}}</span><div class="posted-date" am-time-ago="1412155266204*1000">
+        </div>{{post.postdate}}<hr>
+	</div>
+	
+	<textarea ng-model="newPost" ng-keydown="addPost($event)"></textarea>
