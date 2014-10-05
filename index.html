@@ -2,21 +2,18 @@
 <html ng-app="hsktalk">
 <head>
 	<title>Firebase first application</title>
-<link href="extras/style.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- angularjs local library -->
 	<script src="lib/angular/angular.js"></script>
 	<script src="lib/angular/angular-resource.js"></script>
 	<script src="lib/angular/angular-route.js"></script>
-        <script src="lib/moment/moment.js"></script>
-        <script src="lib/angular-moment/angular-moment.js"></script>
-<!-- firebase and related library -->
-	<script src="https://cdn.firebase.com/js/client/1.0.17/firebase.js"></script>
+    <!-- firebase and related library -->
+	<!--<script src="https://cdn.firebase.com/js/client/1.0.17/firebase.js"></script>-->
+	<script src="lib/firebase/firebase.js"></script>	
 	<script src="https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.js"></script>
-	<script src="https://cdn.firebase.com/js/simple-login/1.6.3/firebase-simple-login.js"></script>
-<!-- apps local library -->
+	<!--<script src="https://cdn.firebase.com/js/simple-login/1.6.3/firebase-simple-login.js"></script>-->
+    <!-- apps local library -->
 	<script src="app.js"></script>
 	<script src="controllers/controllers.js"></script>
-	<script src="service/service.js"></script>
 </head>
 <body ng-controller="mainCtrl">
 	<div ng-view></div>	

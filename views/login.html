@@ -4,10 +4,12 @@
 <form ng-submit="doLogin()">
 	<div>Username<input type="text" ng-model="credential.email"></div>
 	<div>Password<input type="password" ng-model="credential.password"></div>
-	<div>Remember me<input type="checkbox" ng-model="credential.rememberMe"</div>
-	<div><input type="submit" value="Go"><span><a href="#/createAccount">create account</a></span>
-    <span><a href="" ng-click="fbLogin()">create account</a></span>
+	<div><input type="submit" value="Go"></div>
+	<div>
+	   <span><a href="#/createAccount">create account</a></span>
+       <span><a href="" ng-click="doFacebookLogin()">Facebook login</a></span>
+       <span><a href="" ng-click="doGooleLogin()">Google login</a></span>
+       <span><a href="" ng-click="doGitHubLogin()">GitHub login</a></span>
 	</div>
 </form>
-<a href="extras/chat.html">chat</a>
 </div>

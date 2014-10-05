@@ -2,7 +2,7 @@ var hsktalk = angular.module("hsktalk",['firebase','ngRoute']);
 
 var URL = "https://hskrestaurant.firebaseio.com/";
 
-hsktalk.config(function($routeProvider,$locationProvider){
+hsktalk.config(function($routeProvider){
 	$routeProvider.
 	when('/login',{
 		templateUrl:"views/login.html",
