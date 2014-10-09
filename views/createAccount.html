@@ -1,9 +1,39 @@
-<h1>Create Account</h1>
+<div id="user-register-container" class="dialogbox-container">
+ <h2 class="title">Create Account</h2>
+ 
+      <div class="notificationmsg error" ng-if="errormsg">{{errormsg}}</div>
+      <div class="notificationmsg success" ng-if="successmsg">{{successmsg}}</div>
+      <div class="loadingBar" ng-if="loading1"></div>
+	<form name="registerForm" ng-submit="doCreateAccount()" novalidate>
+      <div class="user-register">
 
-<div>
-<form ng-submit="doCreateAccount()">
-	User Name<input type="text" ng-model="username">
-	Password<input type="password" ng-model="password">
-	<input type="submit" value="Go">
-</form>
-</div>
+        <div class="form-item form-type-textfield">
+          <label>First Name</label>
+          <input tabindex="1" type="text" name="firstname" id="edit-first-name" class="form-text"
+           ng-model="newuser.field_first_name"  ng-pattern="/^[a-zA-Z0-9]{1,20}$/" required>
+        </div>
+
+        <div class="form-item form-type-textfield">
+          <label>Last Name</label>
+          <input tabindex="1" type="text" name="lastname" id="edit-last-name" class="form-text" 
+          ng-model="newuser.field_last_name" ng-pattern="/^[a-zA-Z]{1,20}$/" required>
+        </div>
+
+        <div class="form-item form-type-textfield">
+          <label>Email</label>
+          <input tabindex="1" type="email" name="email" id="edit-email" class="form-text" 
+          ng-model="newuser.field_email" required>       
+        </div>
+
+        <div class="form-item form-type-textfield">
+          <label>Phone/Mobile</label>
+           <input tabindex="1" type="text" name="phone" id="edit-phone" class="form-text" 
+           ng-model="newuser.field_phone_mobile.number" ng-pattern="/^[0-9]{10,10}$/">
+        </div>
+        
+        <div class="form-item form-type-submit">
+        <input tabindex="1" id="edit-submit" name="add" value="Create Account" class="form-submit" type="submit">
+        </div>
+    </div> 
+  </form>
+</div> <!---end /#user-register-container --->

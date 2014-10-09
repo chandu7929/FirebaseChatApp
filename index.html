@@ -1,21 +1,70 @@
 <!doctype html>
 <html ng-app="hsktalk">
 <head>
-	<title>Firebase first application</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+    <!--<base href="/"> -->
+
+  <title>HSK CHAT</title>
+  <link href="lib/ngdialog/css/ngDialog.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="lib/ngdialog/css/ngDialog-theme-default.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="lib/ngdialog/css/ngDialog-theme-plain.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="lib/angular-dropdowns/css/dropdowns.css" rel="stylesheet" type="text/css" media="all" />
+
+	<link href="css/reset.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/content-elements.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/layout.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/typography.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/colors.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	
 	<!-- angularjs local library -->
-	<script src="lib/angular/angular.js"></script>
-	<script src="lib/angular/angular-resource.js"></script>
-	<script src="lib/angular/angular-route.js"></script>
+    <script src="js/index.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-touch.min.js"></script>
+    <script src="lib/angular/angular-route.min.js"></script>
+    <script src="lib/angular/angular-cookies.js"></script>
+    <script src="lib/angular/angular-resource.js"></script>
+    <script src="lib/ngdialog/js/ngDialog.min.js"></script>
+    <script src="lib/angular-dropdowns/dist/angular-dropdowns.min.js"></script>
+    <script src="lib/moment/moment.js"></script>
+    <script src="lib/angular-moment/angular-moment.js"></script>
+    
     <!-- firebase and related library -->
 	<!--<script src="https://cdn.firebase.com/js/client/1.0.17/firebase.js"></script>-->
 	<script src="lib/firebase/firebase.js"></script>	
 	<script src="https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.js"></script>
 	<!--<script src="https://cdn.firebase.com/js/simple-login/1.6.3/firebase-simple-login.js"></script>-->
     <!-- apps local library -->
-	<script src="app.js"></script>
-	<script src="controllers/controllers.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controllers/controllers.js"></script>
+
+    <script src="js/index.js"></script>
+
+    <script type="text/javascript">
+      app.initialize();
+    </script>
 </head>
-<body ng-controller="mainCtrl">
-	<div ng-view></div>	
-</body>
+<body id="hskchat" class="{{activeClass}}" ng-controller="mainCtrl">
+  
+    <div id="page-wrapper">
+
+      <div ng-include src="'views/header.html'" ng-if='isLogin'></div>
+      <div id="main" class="clearfix">
+        <div ng-include src="'views/menu.html'" ng-if='isLogin'></div>
+
+        <div id="content" class="clearfix"><div class="inner">
+
+		<!-- this is where content will be injected -->
+        <div ng-view></div>
+
+        </div></div><!--- end /.inner, /#content --->
+
+      </div><!--- end /#main --->
+      
+      <div ng-include src="'views/footer.html'"></div>
+
+    </div><!--- end /#page-wrapper --->
+  </body>
 </html>

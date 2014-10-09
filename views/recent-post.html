@@ -1,0 +1,15 @@
+  <div ng-if="isLogin" id="recent-news" class="nopbox"><div class="inner">
+  <h2 class="title">Recent Post</h2>
+  <div ng-if="errormsg" class="notificationmsg error">{{errormsg}}</div>
+  <div class="loadingBar" ng-if="loading"></div>
+  <div ng-repeat="value in Posts">
+    <div class="teaser">
+      <div class="nopimg user-img"><img ng-src="{{value.picture}}"></div>
+      <div class="description">
+        <p>{{value.displayName}}</p>
+        <div class="posted-date" am-time-ago="value.expires * 1000">
+        {{value.expires * 1000 | date:'fullDate'}}</div>
+        </div>
+      </div>
+  </div>
+  </div>

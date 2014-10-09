@@ -1,0 +1,112 @@
+/* ---------- Basic Layout Styles ----------- */
+
+html, body  {
+  height: 100% !important;
+  min-height: 100% !important;
+}
+body {
+  position: relative;
+}
+#page-wrapper {
+  min-height: 100%;
+  position: relative;
+}
+.global-padding {
+  padding: 20px;
+}
+#header {
+  width: 100%;
+  height: 60px;
+  line-height: 1em;
+  position: relative;
+  z-index: 100;
+}
+.top-links {
+  float: right;
+}
+#main {
+  position: relative;
+  padding-bottom: 60px;   /* Height of the footer element */
+}
+#content {
+  padding: 25px 0 0 0;
+}
+#notification, .nopbox {
+  margin-bottom: 25px;
+}
+#footer {
+  width: 100%;
+  height: 60px;
+  line-height: 1em;
+  overflow: hidden;
+  position:absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.row {
+  clear: both;
+  width: 100%;
+}
+.row:before, .row:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+
+
+/*----- media queries---- */
+@media all and (min-width: 641px) {
+  #menu-area {
+    width: 180px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  body.cmenu #content {
+    padding: 25px 20px 0 200px;
+  }
+  #notification, .nopbox {
+    margin-bottom: 25px;
+  }
+}
+@media all and (min-width: 851px) {
+  #recent-news, #order-detail {
+    float: left;
+    width: 65%;
+  }
+  #recent-orders {
+    float: left;
+    width: 35%;
+  }
+  .add-order-button {
+    width: 35%;
+  }
+  .order-buttons .add-order-button {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  #recent-news .inner {
+    margin-right: 20px;
+  }
+  #order-detail .inner {
+    margin-left: 20px;
+  }
+}
+
+@media all and (min-width: 600px) and (max-width: 640px) {
+
+  #header {
+    height: 80px;
+  }
+  #content {
+    padding: 50px 0 0 0;
+  }
+  #notification, .nopbox {
+    margin-bottom: 50px;
+  }
+
+}

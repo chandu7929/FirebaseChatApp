@@ -1,0 +1,439 @@
+
+/*--- header ---*/
+.logo {
+  padding: 0;
+}
+.logo img {
+  width: 170px;
+  height: auto;
+}
+.user-settings {
+  cursor: pointer;
+}
+.setting-icons {
+  font-size: 0;
+  width: 21px;
+  height: 21px;
+  display: block;
+  float: left;
+}
+.user-detail {
+  display: none;
+}
+.top-links .user-detail {
+  float: right;
+  margin: -5px 0 0 10px;
+}
+.user-detail .user-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  float: left;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.user-detail .user-name {
+  font-weight: 700;
+  padding: 8px 15px 8px 0;
+  float: left;
+}
+
+/*--- angular dropdowns --*/
+.wrap-dd-menu {
+  padding: 0;
+  width: auto;
+  position: static;
+}
+.wrap-dd-menu .dropdown {
+  top: 60px;
+  right: 0;
+  left: auto;
+  width: 100%;
+  max-width: 640px;
+}
+.wrap-dd-menu .dropdown:after {
+  right: 25px;
+}
+.wrap-dd-menu .dropdown:before {
+  right: 25px;   
+}
+.wrap-dd-menu .dropdown li.divider {
+  padding: 0;
+}
+.wrap-dd-menu .dropdown li a {
+  border: none;
+  padding: 15px 10px;
+}
+
+/*-- menu area ---*/
+#menu-area .user-detail {
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+#menu-area .user-detail .user-img {
+  width: 35px;
+  height: 35px;
+}
+#menu-area #navigation {
+  clear: both;
+  text-align: center;
+}
+ul.navigation, ul.navigation li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-image: none;
+  font-weight: 600;
+  line-height: 1em;
+}
+ul.navigation li {
+  display: inline-block;
+  margin: 0 30px 0 0;
+}
+ul.navigation li.last {
+  margin: 0;
+}
+ul.navigation li a {
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding: 35px 0 0 0;
+  display: inline-block;
+}
+ul.navigation li.home {
+  display: none;
+}
+ul.navigation li.new-orders a {
+  background-image: url("../img/icons/new-orders-medium.png");
+}
+ul.navigation li.enquiries a {
+  background-image: url("../img/icons/enquiries-medium.png");
+  position: relative;
+}
+ul.navigation li.enquiries a .ng-binding {
+  font-size: 14px;
+  position: absolute;
+  top: 2px;
+  left: 18px;
+  width: 25px;
+  text-align: center;
+}
+ul.navigation li.invoice-history a {
+  background-image: url("../img/icons/invoice-medium.png");
+}
+ul.navigation li.menui a {
+  background-image: url("../img/icons/menu-medium.png");
+}
+
+/*--- notification ---*/
+#notification p:last-child {
+  margin-bottom: 0;
+}
+#notification .user-name {
+  display: block;
+}
+
+/*--- recent news and orders  box ----*/
+.nopbox h2.title {
+  padding: 10px 20px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.nopbox .teaser {
+  padding: 25px 20px;
+  overflow: hidden;
+  position: relative;
+  clear: both;
+}
+.nopbox .nopimg {
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+.nopbox .description {
+  padding-left: 90px;
+}
+#recent-orders .teaser .posted-date {
+  font-weight: bold;
+}
+.nopbox .qty-unit {
+  font-size: 14px;
+}
+.nopbox .qty {
+  margin-right: 50px;
+}
+.order-buttons {
+  clear: both;
+}
+.add-order-button {
+  margin-bottom: 20px;
+}
+.add-order-button .button {
+  width: 100%;
+}
+
+/*-- new orders --*/
+#order-container {
+  padding: 20px;
+}
+#order-container h2.title {
+  padding: 15px 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid #bababa;
+}
+#order-container .order-content {
+  margin-bottom: 50px;
+}
+.order-list {
+  margin-bottom: 50px;
+}
+.order-list .teaser .close-button {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -10px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+#order-container .form-actions {
+  overflow: hidden;
+}
+#order-container .form-actions .form-submit, #order-container .form-actions .button {
+  width: 100%;
+}
+#order-container .form-actions .submit-for-quote, #order-container .form-actions .close-button {
+  margin-bottom: 20px;
+}
+
+/*-- enquiries and invoice history ---*/
+#enquiries-container, #invoice-history-container {
+  padding: 20px;
+}
+#enquiries-container .form-submit {
+  width: 100%;
+}
+
+/*-- dialog box container --*/
+.dialogbox-container {
+  padding: 50px 30px;
+}
+
+/*--- login, register, forgot box ---*/
+#login-container {
+  max-width:600px;
+  margin: auto;
+}
+.login-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.login-header .logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.login-content .form-type-checkbox {
+  margin-bottom: 70px;
+}
+.login-content .form-submit, .login-content .button, #user-register-container .form-submit, 
+#password-container .form-submit {
+  width: 100%;
+}
+.login-content .forgot-password {
+  text-align: right;
+  margin-bottom: 70px;
+}
+
+
+/*--- message box ---*/
+#msg-full-mode .inner {
+  padding: 20px;
+}
+#msg-full-mode .main-msg {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#msg-full-mode .msg-subject {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+#msg-full-mode .posted-date {
+  font-size: 11px;
+  text-align: right;
+  float: right;
+  width: 100px;
+}
+#msg-full-mode .msg-body {
+  padding: 10px;
+}
+#msg-full-mode .msg-thread {
+  padding: 10px;
+  margin: 0 0 10px 10px;
+}
+#msg-full-mode .add-order-button {
+  margin-top: 20px;
+}
+
+
+/*--- loader -----*/
+.loadingBar {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+
+@media all and (max-width : 480px) {
+
+  ul.navigation li {
+    margin: 0;
+    margin-bottom: 15px;
+    width: 49%;
+    text-align: center;
+  }
+
+}
+
+/*--- media quiries ---*/
+@media all and (min-width: 641px) {
+
+  .user-detail {
+    display: block;
+  }
+  .setting-icons {
+    display: none;
+  }
+  .wrap-dd-menu .dropdown {
+    max-width: 250px;
+  }
+  #menu-area #navigation {
+    text-align: left;
+  }
+  ul.navigation li {
+    display: block;
+    float: none;
+    margin: 0 0 25px 0;
+  }
+  ul.navigation li a {
+    padding: 0 0 0 30px;
+    display: block;
+    background-position: left center;
+  }
+  ul.navigation li.home {
+    display: block;
+  }
+  ul.navigation li.home a {
+    background-image: url("../img/icons/home-small.png");
+  }
+  ul.navigation li.new-orders a {
+    background-image: url("../img/icons/new-orders-small.png");
+  }
+  ul.navigation li.enquiries a {
+    background-image: url("../img/icons/enquiries-small.png");
+  }
+  ul.navigation li.enquiries a .ng-binding {
+    font-size: 11px;
+    top: -3px;
+    left: 1px;
+    width: 15px;
+  }
+  ul.navigation li.invoice-history a {
+    background-image: url("../img/icons/invoice-small.png");
+  }
+  ul.navigation li.menui {
+    display: none;
+  }
+  #notification .user-name {
+    display: inline;
+  }
+  #order-container .form-actions .submit-for-quote {
+    width: 70%;
+    float: left;
+  }
+  #order-container .form-actions .close-button {
+    width: 27%;
+    float: right;
+  }
+  #enquiries-container, #invoice-history-container {
+    padding: 0;
+  }
+  #enquiries-container .form-type-submit {
+    width: 350px;
+  }
+
+}
+
+@media all and (min-width: 600px) and (max-width: 640px) {
+
+  .logo {
+    text-align: center;
+    margin-top: 5px;
+  }
+  .logo img {
+    width: 222px;
+  }
+  .setting-icons {
+    background-image: url("../img/icons/settings.png");
+    width: 40px;
+    height: 40px;
+  }
+  .wrap-dd-menu .dropdown {
+    top: 80px;
+  }
+  ul.navigation li a {
+    padding-top: 45px;
+  }
+  ul.navigation li.home a {
+    background-image: url("../img/icons/home.png");
+  }
+  ul.navigation li.new-orders a {
+    background-image: url("../img/icons/new-orders.png");
+  }
+  ul.navigation li.enquiries a {
+    background-image: url("../img/icons/enquiries.png");
+  }
+  ul.navigation li.enquiries a .ng-binding {
+    font-size: 18px;
+    top: 1px;
+    left: 27px;
+    width: 35px;
+  }
+  ul.navigation li.invoice-history a {
+    background-image: url("../img/icons/invoice.png");
+  }
+  .add-order-button {
+    margin-bottom: 30px;
+  }
+  .nopbox h2.title {
+    padding: 20px;
+  }
+  .nopbox .nopimg {
+    width: 110px;
+    height: 110px;
+  }
+  .nopbox .description {
+    padding-left: 130px;
+  }
+}
+
+
+/*---- global class ---*/
+.unread {
+  font-weight: bold;
+}
+.read {
+  font-weight: normal;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}

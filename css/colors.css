@@ -1,0 +1,284 @@
+/* ---------- Color Module Styles ----------- */
+
+body {
+  color: #555555;
+  background-color: #f6eee8;
+}
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  color: #555555;
+}
+a:focus , a:link, a:active {
+  outline: none;
+}
+a:hover {
+  color: #f5a707;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #8b8b8b;
+}
+
+/*--- dividers --*/
+hr {
+  background-color: #bababa;
+}
+.dividerline {
+  border-color: #bababa;
+}
+
+
+/*-- form elements---*/
+input[type=text],
+input[type=email],
+input[type=password],
+textarea,
+textarea.form-textarea,
+input[type=search], select.form-select {
+  background-color: #fff;
+  border: solid 1px #bbbbbb;
+}
+select.form-select {
+  color: #555555;
+}
+label {
+  color: #939393;
+}
+textarea:focus,
+input[type=password]:focus,
+input[type=text]:focus,
+input[type=search]:focus {
+  background-color: #ffffff;
+}
+button,
+.button,
+input[type="submit"],
+input[type="button"],
+.form-submit {
+  background-color: #f5a707;
+  color: #ffffff;
+}
+button:hover,
+.button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.form-submit:hover {
+  color: #ffffff;
+}
+.button.grey {
+  background-color: #afafaf;
+}
+
+/* ----- blockquote -----*/
+blockquote {
+  border-left-color: 3px solid #f5a707;
+  background-color: #efefef;
+}
+
+/* ---- dropcaps ---- */
+.dropcap {
+  color: #f5a707;
+}
+.dropcap.circle, .dropcap.square {
+  background-color: #f5a707;
+}
+
+/*--- ngdialog box --*/
+.ngdialog.ngdialog-theme-default .ngdialog-content {
+  color: #555555;
+}
+/*--- angular dropdowns --*/
+.wrap-dd-menu .dropdown {
+  background: #fbbe19;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+}
+.wrap-dd-menu .dropdown li:hover a {
+  background: #f5a707;
+}
+.wrap-dd-menu .dropdown:after {
+  border-color: #fbbe19 transparent;
+}
+.wrap-dd-menu .dropdown:before {
+  border-color: #fbbe19 transparent;
+}
+.wrap-dd-menu .dropdown li:first-of-type a {
+  border-radius: 0;
+  box-shadow: 0 0 0;
+}
+.wrap-dd-menu .dropdown li:last-of-type a {
+  border-radius: 0;
+}
+.wrap-dd-menu .dropdown li.divider {
+  background: none;
+}
+
+
+/* ----- selected text -------- */
+::-moz-selection{ background-color: #fed175; color: #ffffff; text-shadow: none; }
+::selection { background-color: #fed175; color: #ffffff; text-shadow: none; } 
+
+/*--- page section start----*/
+#header {
+  background-color: #f5a707;
+  color: #fff;
+}
+#header a {
+  color: #fff;
+}
+#menu-area {
+  background-color: #ffffff;
+}
+.setting-icons {
+  background-image: url("../img/icons/settings-small.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.user-detail .user-img {
+  background-color: #000;
+  background-image: url("../img/icons/user-small.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.user-detail .user-name {
+  color: #000;
+  background-image: url("../img/icons/down-aero-white.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+#menu-area .user-detail .user-img {
+  background-color: #f5a707;
+}
+#menu-area .user-detail .user-name {
+  color: #f5a707;
+}
+ul.navigation li.enquiries a .ng-binding {
+  color: #ffffff;
+}
+
+#notification, .notificationmsg {
+  background-color: #ffffff;
+  border-left: 6px solid #f5a707;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+}
+#notification h1 {
+  color: #f5a707;
+}
+.error {
+  color: #ff0c17;
+}
+.success {
+  color: green;
+}
+.nopbox .inner {
+  background-color: #ffffff;
+  border-bottom: 2px solid #c2bcb7;
+}
+.nopbox h2.title {
+  background-color: #f6f6f6;
+}
+.nopbox .teaser {
+  border-bottom: 1px solid #bababa;
+}
+#recent-orders .teaser:hover {
+  background-color: #e9dede;
+}
+#recent-orders .teaser.active {
+  background-color: #e9dede;
+}
+.nopbox .nopimg {
+  background-color: #07aca2;
+  //background-image: url("../img/icons/user.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#recent-news.nopbox .nopimg {
+  background-image: url("../img/icons/news-icon.png");
+  background-size: contain;
+}
+
+.nopbox .order-img {
+  background-color: #88b0e2;
+  background-image: url("../img/icons/ins.png");
+}
+
+#recent-news .teaser .posted-date {
+  color: #969696;
+}
+#recent-orders .teaser .posted-date {
+  color: #555555;
+}
+.nopbox .qty-unit {
+  color: #969696;
+}
+.order-list {
+  border-top: 1px solid #bababa;
+}
+.order-list .teaser {
+  background-color: #f8f3f3;
+}
+#order-container .teaser .close-button {
+  background-color: #ff0c17;
+  color: #fff;
+}
+
+.login-content input[type=text], .login-content input[type=password] {
+  background-color: #e8e8e8;
+  border: none;
+}
+.create-an-account .button {
+  background-color: #0abeb4;
+}
+
+#footer {
+  background-color: #d6cfc9;
+  color: #000;
+}
+
+/*--- message box ---*/
+.main-msg {
+  background-color: #efeeee;
+}
+.msg-subject {
+  border-bottom: 1px solid #cdcdcd;
+}
+.msg-thread {
+  background-color: #f6f6f6;
+}
+
+
+
+
+/*--- loader -----*/
+.loadingBar {
+  background-image: url("../img/icons/loader-icon.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+/*--- media quiries ---*/
+@media all and (min-width: 641px) {
+  body.cmenu #page-wrapper {
+    background-image: url("../img/strip-bg.png");
+    background-repeat: repeat-y;
+    background-position: left top;
+  }
+}
+
+
+/*--- retina display --- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  
+}
+

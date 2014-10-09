@@ -1,0 +1,13 @@
+ <div ng-if="isLogin" id="recent-orders" class="nopbox"><div class="inner">
+   <h2 class="title">Participants ({{onlineUsers}})</h2>
+   <div class="loadingBar" ng-if="loading1"></div>    	
+    <div ng-repeat="value in allUsers">
+     <div class="teaser"  ng-click="">
+       <div class="nopimg order-file"><img ng-src="{{value.picture}}"></div>
+         <div class="description">
+           <div class="posted-date">{{value.displayName}}</div>
+         </div>
+       </div>
+    </div>
+	<div ng-if="allUsers.length == 0">There is no user in participation</div>
+   </div>

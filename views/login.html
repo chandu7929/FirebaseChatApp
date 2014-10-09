@@ -1,15 +1,32 @@
-<h1>Login Page</h1>
+    <div id="login-container" class="dialogbox-container" ng-if="!isLogin">
 
-<div>
-<form ng-submit="doLogin()">
-	<div>Username<input type="text" ng-model="credential.email"></div>
-	<div>Password<input type="password" ng-model="credential.password"></div>
-	<div><input type="submit" value="Go"></div>
-	<div>
-	   <span><a href="#/createAccount">create account</a></span>
-       <span><a href="" ng-click="doFacebookLogin()">Facebook login</a></span>
-       <span><a href="" ng-click="doGooleLogin()">Google login</a></span>
-       <span><a href="" ng-click="doGitHubLogin()">GitHub login</a></span>
-	</div>
-</form>
-</div>
+      <div class="login-header">
+        <div class="logo"><img src="img/logo.png" alt="Hsk Chat" /></div>
+        <div class="slogan">Sign in to connect</div>
+      </div>     
+      <div class="loadingBar" ng-if="loading"></div> 
+      <div ng-show="errormsg" class="notificationmsg error">{{errormsg}}</div>
+	<form name="loginForm" ng-submit="doLogin()" novalidate>
+      <div class="login-content">
+        <div class="form-item form-type-textfield">
+          <input tabindex="1" type="text" name="email" id="edit-name" class="form-text" placeholder="Username" ng-model="credentials.email" >
+        </div>
+        <div class="form-item form-type-textfield">
+          <input tabindex="1" type="password" name="password" id="edit-password" class="form-text" placeholder="Password" ng-model="credentials.password" >
+        </div>
+        <div class="form-item form-type-checkbox">
+          <input tabindex="1" id="edit-remember-me"  name="rememberme" class="form-checkbox" type="checkbox" 
+          ng-model="rememberMe" checked="rememberMe" ng-change="setRememberMe()">
+          <span>Remember me </span>
+        </div>
+        <div class="form-item form-type-submit"><input tabindex="1" id="edit-submit" name="log_in" value="Log in" class="form-submit" type="submit"></div>
+	</form>
+    <div class="forgot-password"><a href="#" ng-click="openForgotpasswordDailogBox()">Forgot Password ?
+    </a></div>
+    <div class="create-an-account"><a href="#/createAccount" class="button">Create account</a></div>
+    <div class="forgot-password"><a href="#" class="button" ng-click="doFacebookLogin()">Facebook login</a></div>
+    <div class="forgot-password"><a href="#" class="button" ng-click="doGooleLogin()">Google login</a></div>
+    <div class="forgot-password"><a href="#" class="button" ng-click="doGitHubLogin()">GitHub login</a></div>
+    </div><!--- end /.login-content --->
+
+    </div><!--- end /#login-container --->
